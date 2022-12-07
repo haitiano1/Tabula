@@ -1,0 +1,26 @@
+header{
+    .bg-left img{
+        width: 100%;
+    }
+    .navbar-brand img{
+        width: 80px;
+    }
+    #navbarContent .navbar-nav a{
+        @include styleText($fs-7,$fw-3,$color-black-1);
+        padding: 8px 55px 8px 0;
+
+    &:hover{
+        @include styleTextHover($ts-1,$color-pink-1);
+    }
+    }
+    .iconNav a{
+        text-decoration: none;
+        padding-right: 12px;
+        transition: $ts-1;
+    
+    @include styleText($fs-7, $fw-3, $color-black-1);
+    &:hover{
+        @include styleTextHover($ts-1,$color-pink-1);
+    }
+    }
+}
