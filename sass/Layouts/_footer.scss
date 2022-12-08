@@ -53,6 +53,7 @@
 			}
 			.ft-menu-item {
 				&:hover {
+					text-decoration: none;
 					opacity: 0.7;
 					transition: all 0.2s;
 				}
@@ -69,9 +70,6 @@
 			border-radius: 24px;
 			border: 1px solid #b6258f;
 			background: #aa017e;
-			// color: #181818;
-			// font-size: 13px;
-			// font-weight: 500;
 			padding: 14px 12px 14px 12px;
 			margin: 0;
 			transition: all 0.5s;
@@ -103,10 +101,6 @@
 			border: none;
 			&:hover {
 				@include styleButtonHover($color-white-1,$bs-4,$color-bg-2,$ts-4);
-				// color: #ffffff;
-				// box-shadow: 0 0 0 1px #ffffff inset;
-				// background-color: #aa017e;
-				// transition: all 0.3s ease;
 			}
 		}
 		.info-menu {

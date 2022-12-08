@@ -31,11 +31,32 @@ html, body {
   transition: all 0.3s ease;
 }
 
-header .bg-left img {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  margin: auto;
+  z-index: 100;
+}
+header .sticky {
+  background-color: #fff;
+}
+header .sticky .navbar a img {
+  width: 0px;
+  height: 0px;
+}
+header .sticky .navbar .collapse .header_right .phone-icon button, header .sticky .navbar .collapse .header_right .contact .contact-form .btn-form .btn-send button, .contact .contact-form .btn-form header .sticky .navbar .collapse .header_right .btn-send button {
+  padding: 6px 20px;
 }
 header .navbar-brand img {
   width: 80px;
+}
+header .navbar-toggler-icon {
+  background-image: #b61984;
+  font-size: 24px;
+  font-weight: 13px;
+  top: 12px;
 }
 header #navbarContent .navbar-nav a {
   font-size: 13px;
@@ -60,6 +81,12 @@ header .iconNav a:hover {
   color: #b61984;
 }
 
+.carousel {
+  background-image: url(./../img/yellow_top_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 60px 0 60px 0;
+}
 .carousel .carousel-text h5 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -228,6 +255,7 @@ header .iconNav a:hover {
   transition: all 0.2s;
 }
 .footer .footer-info div .ft-menu-item:hover {
+  text-decoration: none;
   opacity: 0.7;
   transition: all 0.2s;
 }
